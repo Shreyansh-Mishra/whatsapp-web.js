@@ -5,7 +5,11 @@ exports.WhatsWebURL = 'https://web.whatsapp.com/';
 exports.DefaultOptions = {
     puppeteer: {
         headless: true,
-        defaultViewport: null
+        defaultViewport: null,
+        args: [
+                    '--no-sandbox',
+                    '--disable-setuid-sandbox'
+                ]
     },
     session: false,
     qrTimeoutMs: 45000,
