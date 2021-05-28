@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <meta name="generator" content="JSDoc 3.6.4">
+  <meta name="generator" content="JSDoc 3.6.6">
   <meta charset="utf-8">
-  <title>whatsapp-web.js 1.8.2 &raquo; Home</title>
+  <title>whatsapp-web.js 1.12.6 &raquo; Home</title>
   <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Karla:400,400i,700,700i" type="text/css">
   <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Noto+Serif:400,400i,700,700i" type="text/css">
   <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Inconsolata:500" type="text/css">
@@ -15,7 +15,7 @@
   <nav id="jsdoc-navbar" role="navigation" class="jsdoc-navbar">
     <div id="jsdoc-navbar-container">
       <div id="jsdoc-navbar-content">
-        <a href="index.html" class="jsdoc-navbar-package-name">whatsapp-web.<wbr>js 1.<wbr>8.<wbr>2</a>
+        <a href="index.html" class="jsdoc-navbar-package-name">whatsapp-web.<wbr>js 1.<wbr>12.<wbr>6</a>
       </div>
     </div>
   </nav>
@@ -27,11 +27,11 @@
         <div id="jsdoc-main" role="main">
           <header class="page-header">
             <h1>
-              whatsapp-web.js 1.8.2
+              whatsapp-web.js 1.12.6
             </h1>
           </header>
           <article>
-            <p><a href="https://www.npmjs.com/package/whatsapp-web.js"><img src="https://img.shields.io/npm/v/whatsapp-web.js.svg" alt="npm"></a> <a href="https://depfu.com/github/pedroslopez/whatsapp-web.js?project_id=9765"><img src="https://badges.depfu.com/badges/4a65a0de96ece65fdf39e294e0c8dcba/overview.svg" alt="Depfu"></a> <img src="https://img.shields.io/badge/WhatsApp_Web-2.2035.14-brightgreen.svg" alt="WhatsApp_Web 2.2035.14"> <a href="https://discord.gg/H7DqQs4"><img src="https://img.shields.io/discord/698610475432411196.svg?logo=discord" alt="Discord Chat"></a></p>
+            <p><a href="https://www.npmjs.com/package/whatsapp-web.js"><img src="https://img.shields.io/npm/v/whatsapp-web.js.svg" alt="npm"></a> <a href="https://depfu.com/github/pedroslopez/whatsapp-web.js?project_id=9765"><img src="https://badges.depfu.com/badges/4a65a0de96ece65fdf39e294e0c8dcba/overview.svg" alt="Depfu"></a> <img src="https://img.shields.io/badge/WhatsApp_Web-2.2106.5-brightgreen.svg" alt="WhatsApp_Web 2.2106.5"> <a href="https://discord.gg/H7DqQs4"><img src="https://img.shields.io/discord/698610475432411196.svg?logo=discord" alt="Discord Chat"></a></p>
             <h1>whatsapp-web.js</h1>
             <p>A WhatsApp API client that connects through the WhatsApp Web browser app</p>
             <p>It uses Puppeteer to run a real instance of Whatsapp Web to avoid getting blocked.</p>
@@ -84,11 +84,11 @@ client.initialize();
                 </tr>
                 <tr>
                   <td>Send media (video)</td>
-                  <td>✅ <a href="https://github.com/pedroslopez/whatsapp-web.js/issues/78#issuecomment-592723583">(requires google chrome)</a></td>
+                  <td>✅ <a href="https://waguide.pedroslopez.me/features/handling-attachments#caveat-for-sending-videos-and-gifs">(requires google chrome)</a></td>
                 </tr>
                 <tr>
                   <td>Send stickers</td>
-                  <td><em>pending</em></td>
+                  <td>✅</td>
                 </tr>
                 <tr>
                   <td>Receive media (images/audio/video/documents)</td>
@@ -96,7 +96,7 @@ client.initialize();
                 </tr>
                 <tr>
                   <td>Send contact cards</td>
-                  <td><em>pending</em></td>
+                  <td>✅</td>
                 </tr>
                 <tr>
                   <td>Send location</td>
@@ -123,6 +123,10 @@ client.initialize();
                   <td>✅</td>
                 </tr>
                 <tr>
+                  <td>Modify group settings (send messages, edit info)</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
                   <td>Add group participants</td>
                   <td>✅</td>
                 </tr>
@@ -140,6 +144,10 @@ client.initialize();
                 </tr>
                 <tr>
                   <td>Mute/unmute chats</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                  <td>Block/unblock contacts</td>
                   <td>✅</td>
                 </tr>
                 <tr>
@@ -218,7 +226,17 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="BusinessContact.html#block" class="!symbol-index-name">BusinessContact#<wbr>block()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="BusinessContact.html#businessProfile" class="!symbol-index-name">BusinessContact#<wbr>businessProfile</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="BusinessContact.html#getAbout" class="!symbol-index-name">BusinessContact#<wbr>getAbout()</a>
                       </dt>
                       <dd>
                       </dd>
@@ -237,15 +255,20 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
+                      <dt class="symbol-index-name">
+                        <a href="BusinessContact.html#isBlocked" class="!symbol-index-name">BusinessContact#<wbr>isBlocked</a>
+                      </dt>
+                      <dd>
+                      </dd>
                       <dt class="symbol-index-name">
                         <a href="BusinessContact.html#isBusiness" class="!symbol-index-name">BusinessContact#<wbr>isBusiness</a>
                       </dt>
                       <dd>
                       </dd>
-                    </dl>
-                  </div>
-                  <div class="symbol-index-column">
-                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="BusinessContact.html#isEnterprise" class="!symbol-index-name">BusinessContact#<wbr>isEnterprise</a>
                       </dt>
@@ -271,15 +294,15 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="BusinessContact.html#isWAContact" class="!symbol-index-name">BusinessContact#<wbr>isWAContact</a>
                       </dt>
                       <dd>
                       </dd>
-                    </dl>
-                  </div>
-                  <div class="symbol-index-column">
-                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="BusinessContact.html#name" class="!symbol-index-name">BusinessContact#<wbr>name</a>
                       </dt>
@@ -297,6 +320,11 @@ client.initialize();
                       </dd>
                       <dt class="symbol-index-name">
                         <a href="BusinessContact.html#shortName" class="!symbol-index-name">BusinessContact#<wbr>shortName</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="BusinessContact.html#unblock" class="!symbol-index-name">BusinessContact#<wbr>unblock()</a>
                       </dt>
                       <dd>
                       </dd>
@@ -346,12 +374,13 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
-                    </dl>
-                  </div>
-                  <div class="symbol-index-column">
-                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="Chat.html#getContact" class="!symbol-index-name">Chat#<wbr>getContact()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Chat.html#getLabels" class="!symbol-index-name">Chat#<wbr>getLabels()</a>
                       </dt>
                       <dd>
                       </dd>
@@ -360,8 +389,17 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="Chat.html#isGroup" class="!symbol-index-name">Chat#<wbr>isGroup</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Chat.html#isMuted" class="!symbol-index-name">Chat#<wbr>isMuted</a>
                       </dt>
                       <dd>
                       </dd>
@@ -371,12 +409,32 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="Chat.html#markUnread" class="!symbol-index-name">Chat#<wbr>markUnread()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="Chat.html#mute" class="!symbol-index-name">Chat#<wbr>mute(unmuteDate)</a>
                       </dt>
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="Chat.html#muteExpiration" class="!symbol-index-name">Chat#<wbr>muteExpiration</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="Chat.html#name" class="!symbol-index-name">Chat#<wbr>name</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Chat.html#pin" class="!symbol-index-name">Chat#<wbr>pin()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Chat.html#pinned" class="!symbol-index-name">Chat#<wbr>pinned</a>
                       </dt>
                       <dd>
                       </dd>
@@ -416,6 +474,11 @@ client.initialize();
                       </dd>
                       <dt class="symbol-index-name">
                         <a href="Chat.html#unmute" class="!symbol-index-name">Chat#<wbr>unmute()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Chat.html#unpin" class="!symbol-index-name">Chat#<wbr>unpin()</a>
                       </dt>
                       <dd>
                       </dd>
@@ -539,10 +602,6 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
-                    </dl>
-                  </div>
-                  <div class="symbol-index-column">
-                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="Client.html#event:message" class="!symbol-index-name">Client#<wbr>event:message</a>
                       </dt>
@@ -558,6 +617,10 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="Client.html#event:message_revoke_everyone" class="!symbol-index-name">Client#<wbr>event:message_revoke_everyone</a>
                       </dt>
@@ -584,7 +647,17 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="Client.html#getChatLabels" class="!symbol-index-name">Client#<wbr>getChatLabels(chatId)</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="Client.html#getChats" class="!symbol-index-name">Client#<wbr>getChats()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Client.html#getChatsByLabelId" class="!symbol-index-name">Client#<wbr>getChatsByLabelId(labelId)</a>
                       </dt>
                       <dd>
                       </dd>
@@ -604,6 +677,21 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="Client.html#getLabelById" class="!symbol-index-name">Client#<wbr>getLabelById(labelId)</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Client.html#getLabels" class="!symbol-index-name">Client#<wbr>getLabels()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Client.html#getNumberId" class="!symbol-index-name">Client#<wbr>getNumberId(number)</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="Client.html#getProfilePicUrl" class="!symbol-index-name">Client#<wbr>getProfilePicUrl(contactId)</a>
                       </dt>
                       <dd>
@@ -613,15 +701,15 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
-                    </dl>
-                  </div>
-                  <div class="symbol-index-column">
-                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="Client.html#getWWebVersion" class="!symbol-index-name">Client#<wbr>getWWebVersion()</a>
                       </dt>
                       <dd>
                       </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="Client.html#info" class="!symbol-index-name">Client#<wbr>info</a>
                       </dt>
@@ -643,7 +731,17 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="Client.html#markChatUnread" class="!symbol-index-name">Client#<wbr>markChatUnread(chatId)</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="Client.html#muteChat" class="!symbol-index-name">Client#<wbr>muteChat(chatId, unmuteDate)</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Client.html#pinChat" class="!symbol-index-name">Client#<wbr>pinChat()</a>
                       </dt>
                       <dd>
                       </dd>
@@ -687,6 +785,11 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Client.html#unpinChat" class="!symbol-index-name">Client#<wbr>unpinChat()</a>
+                      </dt>
+                      <dd>
+                      </dd>
                     </dl>
                   </div>
                 </div>
@@ -708,24 +811,20 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
-                    </dl>
-                  </div>
-                  <div class="symbol-index-column">
-                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="ClientInfo.html#me" class="!symbol-index-name">ClientInfo#<wbr>me</a>
                       </dt>
                       <dd>
                       </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="ClientInfo.html#phone" class="!symbol-index-name">ClientInfo#<wbr>phone</a>
                       </dt>
                       <dd>
                       </dd>
-                    </dl>
-                  </div>
-                  <div class="symbol-index-column">
-                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="ClientInfo.html#platform" class="!symbol-index-name">ClientInfo#<wbr>platform</a>
                       </dt>
@@ -733,6 +832,15 @@ client.initialize();
                       </dd>
                       <dt class="symbol-index-name">
                         <a href="ClientInfo.html#pushname" class="!symbol-index-name">ClientInfo#<wbr>pushname</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
+                      <dt class="symbol-index-name">
+                        <a href="ClientInfo.html#wid" class="!symbol-index-name">ClientInfo#<wbr>wid</a>
                       </dt>
                       <dd>
                       </dd>
@@ -753,6 +861,16 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="Contact.html#block" class="!symbol-index-name">Contact#<wbr>block()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Contact.html#getAbout" class="!symbol-index-name">Contact#<wbr>getAbout()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="Contact.html#getChat" class="!symbol-index-name">Contact#<wbr>getChat()</a>
                       </dt>
                       <dd>
@@ -768,7 +886,7 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
-                        <a href="Contact.html#isBusiness" class="!symbol-index-name">Contact#<wbr>isBusiness</a>
+                        <a href="Contact.html#isBlocked" class="!symbol-index-name">Contact#<wbr>isBlocked</a>
                       </dt>
                       <dd>
                       </dd>
@@ -776,6 +894,11 @@ client.initialize();
                   </div>
                   <div class="symbol-index-column">
                     <dl class="symbol-index-list">
+                      <dt class="symbol-index-name">
+                        <a href="Contact.html#isBusiness" class="!symbol-index-name">Contact#<wbr>isBusiness</a>
+                      </dt>
+                      <dd>
+                      </dd>
                       <dt class="symbol-index-name">
                         <a href="Contact.html#isEnterprise" class="!symbol-index-name">Contact#<wbr>isEnterprise</a>
                       </dt>
@@ -801,15 +924,15 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
-                    </dl>
-                  </div>
-                  <div class="symbol-index-column">
-                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="Contact.html#isWAContact" class="!symbol-index-name">Contact#<wbr>isWAContact</a>
                       </dt>
                       <dd>
                       </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="Contact.html#name" class="!symbol-index-name">Contact#<wbr>name</a>
                       </dt>
@@ -827,6 +950,11 @@ client.initialize();
                       </dd>
                       <dt class="symbol-index-name">
                         <a href="Contact.html#shortName" class="!symbol-index-name">Contact#<wbr>shortName</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Contact.html#unblock" class="!symbol-index-name">Contact#<wbr>unblock()</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1000,12 +1128,13 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
-                    </dl>
-                  </div>
-                  <div class="symbol-index-column">
-                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="GroupChat.html#getInviteCode" class="!symbol-index-name">GroupChat#<wbr>getInviteCode()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="GroupChat.html#getLabels" class="!symbol-index-name">GroupChat#<wbr>getLabels()</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1014,8 +1143,17 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="GroupChat.html#isGroup" class="!symbol-index-name">GroupChat#<wbr>isGroup</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="GroupChat.html#isMuted" class="!symbol-index-name">GroupChat#<wbr>isMuted</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1030,7 +1168,17 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="GroupChat.html#markUnread" class="!symbol-index-name">GroupChat#<wbr>markUnread()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="GroupChat.html#mute" class="!symbol-index-name">GroupChat#<wbr>mute(unmuteDate)</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="GroupChat.html#muteExpiration" class="!symbol-index-name">GroupChat#<wbr>muteExpiration</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1046,6 +1194,16 @@ client.initialize();
                       </dd>
                       <dt class="symbol-index-name">
                         <a href="GroupChat.html#participants" class="!symbol-index-name">GroupChat#<wbr>participants</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="GroupChat.html#pin" class="!symbol-index-name">GroupChat#<wbr>pin()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="GroupChat.html#pinned" class="!symbol-index-name">GroupChat#<wbr>pinned</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1094,6 +1252,16 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="GroupChat.html#setInfoAdminsOnly" class="!symbol-index-name">GroupChat#<wbr>setInfoAdminsOnly([adminsOnly])</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="GroupChat.html#setMessagesAdminsOnly" class="!symbol-index-name">GroupChat#<wbr>setMessagesAdminsOnly([adminsOnly])</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="GroupChat.html#setSubject" class="!symbol-index-name">GroupChat#<wbr>setSubject(subject)</a>
                       </dt>
                       <dd>
@@ -1110,6 +1278,11 @@ client.initialize();
                       </dd>
                       <dt class="symbol-index-name">
                         <a href="GroupChat.html#unmute" class="!symbol-index-name">GroupChat#<wbr>unmute()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="GroupChat.html#unpin" class="!symbol-index-name">GroupChat#<wbr>unpin()</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1282,17 +1455,27 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
-                    </dl>
-                  </div>
-                  <div class="symbol-index-column">
-                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="InterfaceController.html#openChatDrawer" class="!symbol-index-name">InterfaceController#<wbr>openChatDrawer(chatId)</a>
                       </dt>
                       <dd>
                       </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
+                      <dt class="symbol-index-name">
+                        <a href="InterfaceController.html#openChatSearch" class="!symbol-index-name">InterfaceController#<wbr>openChatSearch(chatId)</a>
+                      </dt>
+                      <dd>
+                      </dd>
                       <dt class="symbol-index-name">
                         <a href="InterfaceController.html#openChatWindow" class="!symbol-index-name">InterfaceController#<wbr>openChatWindow(chatId)</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="InterfaceController.html#openChatWindowAt" class="!symbol-index-name">InterfaceController#<wbr>openChatWindowAt(msgId)</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1302,6 +1485,50 @@ client.initialize();
                     <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="InterfaceController.html#openMessageDrawer" class="!symbol-index-name">InterfaceController#<wbr>openMessageDrawer(msgId)</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="symbol-index-content">
+                <h2 id="Label">Label</h2>
+                <div class="symbol-index-section">
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
+                      <dt class="symbol-index-name">
+                        <a href="Label.html" class="!symbol-index-name">Label(client, labelData)</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Label.html#getChats" class="!symbol-index-name">Label#<wbr>getChats()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
+                      <dt class="symbol-index-name">
+                        <a href="Label.html#hexColor" class="!symbol-index-name">Label#<wbr>hexColor</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Label.html#id" class="!symbol-index-name">Label#<wbr>id</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
+                      <dt class="symbol-index-name">
+                        <a href="Label.html#name" class="!symbol-index-name">Label#<wbr>name</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1400,10 +1627,6 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
-                    </dl>
-                  </div>
-                  <div class="symbol-index-column">
-                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="Message.html#fromMe" class="!symbol-index-name">Message#<wbr>fromMe</a>
                       </dt>
@@ -1414,8 +1637,17 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="Message.html#getContact" class="!symbol-index-name">Message#<wbr>getContact()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Message.html#getInfo" class="!symbol-index-name">Message#<wbr>getInfo()</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1449,6 +1681,21 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Message.html#isStarred" class="!symbol-index-name">Message#<wbr>isStarred</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Message.html#isStatus" class="!symbol-index-name">Message#<wbr>isStatus</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Message.html#links" class="!symbol-index-name">Message#<wbr>links</a>
+                      </dt>
+                      <dd>
+                      </dd>
                     </dl>
                   </div>
                   <div class="symbol-index-column">
@@ -1474,6 +1721,11 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="Message.html#star" class="!symbol-index-name">Message#<wbr>star()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="Message.html#timestamp" class="!symbol-index-name">Message#<wbr>timestamp</a>
                       </dt>
                       <dd>
@@ -1485,6 +1737,16 @@ client.initialize();
                       </dd>
                       <dt class="symbol-index-name">
                         <a href="Message.html#type" class="!symbol-index-name">Message#<wbr>type</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Message.html#unstar" class="!symbol-index-name">Message#<wbr>unstar()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Message.html#vCards" class="!symbol-index-name">Message#<wbr>vCards</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1706,12 +1968,13 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
-                    </dl>
-                  </div>
-                  <div class="symbol-index-column">
-                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="PrivateChat.html#getContact" class="!symbol-index-name">PrivateChat#<wbr>getContact()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="PrivateChat.html#getLabels" class="!symbol-index-name">PrivateChat#<wbr>getLabels()</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1720,8 +1983,17 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="PrivateChat.html#isGroup" class="!symbol-index-name">PrivateChat#<wbr>isGroup</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="PrivateChat.html#isMuted" class="!symbol-index-name">PrivateChat#<wbr>isMuted</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1731,12 +2003,32 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="PrivateChat.html#markUnread" class="!symbol-index-name">PrivateChat#<wbr>markUnread()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="PrivateChat.html#mute" class="!symbol-index-name">PrivateChat#<wbr>mute(unmuteDate)</a>
                       </dt>
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="PrivateChat.html#muteExpiration" class="!symbol-index-name">PrivateChat#<wbr>muteExpiration</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="PrivateChat.html#name" class="!symbol-index-name">PrivateChat#<wbr>name</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="PrivateChat.html#pin" class="!symbol-index-name">PrivateChat#<wbr>pin()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="PrivateChat.html#pinned" class="!symbol-index-name">PrivateChat#<wbr>pinned</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1780,6 +2072,11 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="PrivateChat.html#unpin" class="!symbol-index-name">PrivateChat#<wbr>unpin()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="PrivateChat.html#unreadCount" class="!symbol-index-name">PrivateChat#<wbr>unreadCount</a>
                       </dt>
                       <dd>
@@ -1801,6 +2098,16 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
+                        <a href="PrivateContact.html#block" class="!symbol-index-name">PrivateContact#<wbr>block()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="PrivateContact.html#getAbout" class="!symbol-index-name">PrivateContact#<wbr>getAbout()</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
                         <a href="PrivateContact.html#getChat" class="!symbol-index-name">PrivateContact#<wbr>getChat()</a>
                       </dt>
                       <dd>
@@ -1816,7 +2123,7 @@ client.initialize();
                       <dd>
                       </dd>
                       <dt class="symbol-index-name">
-                        <a href="PrivateContact.html#isBusiness" class="!symbol-index-name">PrivateContact#<wbr>isBusiness</a>
+                        <a href="PrivateContact.html#isBlocked" class="!symbol-index-name">PrivateContact#<wbr>isBlocked</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1824,6 +2131,11 @@ client.initialize();
                   </div>
                   <div class="symbol-index-column">
                     <dl class="symbol-index-list">
+                      <dt class="symbol-index-name">
+                        <a href="PrivateContact.html#isBusiness" class="!symbol-index-name">PrivateContact#<wbr>isBusiness</a>
+                      </dt>
+                      <dd>
+                      </dd>
                       <dt class="symbol-index-name">
                         <a href="PrivateContact.html#isEnterprise" class="!symbol-index-name">PrivateContact#<wbr>isEnterprise</a>
                       </dt>
@@ -1849,15 +2161,15 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
-                    </dl>
-                  </div>
-                  <div class="symbol-index-column">
-                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="PrivateContact.html#isWAContact" class="!symbol-index-name">PrivateContact#<wbr>isWAContact</a>
                       </dt>
                       <dd>
                       </dd>
+                    </dl>
+                  </div>
+                  <div class="symbol-index-column">
+                    <dl class="symbol-index-list">
                       <dt class="symbol-index-name">
                         <a href="PrivateContact.html#name" class="!symbol-index-name">PrivateContact#<wbr>name</a>
                       </dt>
@@ -1875,6 +2187,11 @@ client.initialize();
                       </dd>
                       <dt class="symbol-index-name">
                         <a href="PrivateContact.html#shortName" class="!symbol-index-name">PrivateContact#<wbr>shortName</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="PrivateContact.html#unblock" class="!symbol-index-name">PrivateContact#<wbr>unblock()</a>
                       </dt>
                       <dd>
                       </dd>
@@ -1928,14 +2245,34 @@ client.initialize();
                       </dt>
                       <dd>
                       </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Util.html#.formatImageToWebpSticker" class="!symbol-index-name">Util.<wbr>formatImageToWebpSticker(media)</a>
+                      </dt>
+                      <dd>
+                      </dd>
                     </dl>
                   </div>
                   <div class="symbol-index-column">
                     <dl class="symbol-index-list">
+                      <dt class="symbol-index-name">
+                        <a href="Util.html#.formatToWebpSticker" class="!symbol-index-name">Util.<wbr>formatToWebpSticker(media)</a>
+                      </dt>
+                      <dd>
+                      </dd>
+                      <dt class="symbol-index-name">
+                        <a href="Util.html#.formatVideoToWebpSticker" class="!symbol-index-name">Util.<wbr>formatVideoToWebpSticker(media)</a>
+                      </dt>
+                      <dd>
+                      </dd>
                     </dl>
                   </div>
                   <div class="symbol-index-column">
                     <dl class="symbol-index-list">
+                      <dt class="symbol-index-name">
+                        <a href="Util.html#.setFfmpegPath" class="!symbol-index-name">Util.<wbr>setFfmpegPath(path)</a>
+                      </dt>
+                      <dd>
+                      </dd>
                     </dl>
                   </div>
                 </div>
@@ -2029,7 +2366,7 @@ client.initialize();
   <footer id="jsdoc-footer" class="jsdoc-footer">
     <div id="jsdoc-footer-container">
       <p>
-        Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> 3.6.4 on September 1, 2020.
+        Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> 3.6.6 on April 20, 2021.
       </p>
     </div>
   </footer>

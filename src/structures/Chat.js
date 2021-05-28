@@ -57,6 +57,24 @@ class Chat extends Base {
          */
         this.archived = data.archive;
 
+        /**
+         * Indicates if the Chat is pinned
+         * @type {boolean}
+         */
+        this.pinned = !!data.pin;
+
+        /**
+         * Indicates if the chat is muted or not
+         * @type {number}
+         */
+        this.isMuted = data.isMuted;
+
+        /**
+         * Unix timestamp for when the mute expires
+         * @type {number}
+         */
+        this.muteExpiration = data.muteExpiration;
+
         return super._patch(data);
     }
 
@@ -113,6 +131,22 @@ class Chat extends Base {
     }
 
     /**
+     * Pins this chat
+     * @returns {Promise<boolean>} New pin state. Could be false if the max number of pinned chats was reached.
+     */
+    async pin() {
+        return this.client.pinChat(this.id._serialized);
+    }
+
+    /**
+     * Unpins this chat
+     * @returns {Promise<boolean>} New pin state
+     */
+    async unpin() {
+        return this.client.unpinChat(this.id._serialized);
+    }
+
+    /**
      * Mutes this chat until a specified date
      * @param {Date} unmuteDate Date at which the Chat will be unmuted
      */
@@ -125,6 +159,13 @@ class Chat extends Base {
      */
     async unmute() {
         return this.client.unmuteChat(this.id._serialized);
+    }
+
+    /**
+     * Mark this chat as unread
+     */
+    async markUnread(){
+        return this.client.markChatUnread(this.id._serialized);
     }
 
     /**
@@ -150,7 +191,8 @@ class Chat extends Base {
             }
 
             msgs.sort((a, b) => (a.t > b.t) ? 1 : -1);
-            return msgs.splice(msgs.length - limit).map(m => m.serialize());
+            if (msgs.length > limit) msgs = msgs.splice(msgs.length - limit);
+            return msgs.map(m => window.WWebJS.getMessageModel(m));
 
         }, this.id._serialized, searchOptions.limit);
 
@@ -193,6 +235,14 @@ class Chat extends Base {
      */
     async getContact() {
         return await this.client.getContactById(this.id._serialized);
+    }
+
+    /**
+     * Returns array of all Labels assigned to this Chat
+     * @returns {Promise<Array<Label>>}
+     */
+    async getLabels() {
+        return this.client.getChatLabels(this.id._serialized);
     }
 }
 
